@@ -160,6 +160,21 @@ export default function Home() {
 
       </section>
 
+      {/* ========== MONTAGE VIDEO ========== */}
+      <section className="px-6 sm:px-10 lg:px-20 max-w-5xl mx-auto">
+        <div className="rounded-2xl overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full"
+          >
+            <source src="/montage.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
       {/* ========== SHOW CARDS ========== */}
       <section className="px-6 sm:px-10 lg:px-20 py-24 md:py-32 max-w-7xl mx-auto">
         <ScrollReveal>
