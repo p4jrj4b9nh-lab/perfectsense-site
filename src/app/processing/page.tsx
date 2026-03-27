@@ -61,9 +61,9 @@ export default function ProcessingPage() {
           />
         </div>
 
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 pb-16 md:pb-24 text-center">
           {/* Terminal-style header */}
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center justify-center gap-2 mb-6">
             <span className="inline-block w-2 h-2 rounded-full bg-[#00d4ff] animate-pulse" />
             <span className="text-[11px] font-[400] tracking-[0.3em] uppercase text-[#00d4ff]/60">
               system online

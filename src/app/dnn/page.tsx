@@ -80,13 +80,12 @@ export default function DNNPage() {
           />
         </div>
 
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-24 text-center">
           {/* Breaking news bar */}
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <span className="inline-block px-3 py-1 bg-red-600 text-white text-[10px] font-[400] tracking-[0.2em] uppercase">
               Live
             </span>
-            <div className="h-[1px] flex-1 bg-[#4a9eff]/30" />
           </div>
 
           <h1 className="text-6xl md:text-8xl font-[200] tracking-tight text-white mb-4">

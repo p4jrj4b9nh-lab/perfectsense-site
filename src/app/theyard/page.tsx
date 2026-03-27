@@ -61,7 +61,7 @@ export default function TheYardPage() {
           />
         </div>
 
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 pb-16 md:pb-24 text-center">
           <h1
             className="text-6xl md:text-8xl font-[200] tracking-tight mb-4"
             style={{ color: "#d4a24e" }}

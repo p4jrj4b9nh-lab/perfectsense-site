@@ -70,7 +70,7 @@ export default function ShowCard({
         )}
 
         {/* Content */}
-        <div className="p-8 md:p-10 flex flex-col flex-1 justify-between">
+        <div className="p-8 md:p-10 flex flex-col flex-1 justify-between text-center">
           <div>
             <h3
               className="text-2xl md:text-3xl font-[200] tracking-[0.05em] mb-2"
