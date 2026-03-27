@@ -83,8 +83,11 @@ export default function TheYardPage() {
       {/* ── About — Straight talk, no frills ── */}
       <section className="max-w-4xl mx-auto px-6 py-24">
         <div className="border-l-2 border-[#d4a24e]/20 pl-8">
+          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#d4a24e]/60 mb-6">
+            About the Show
+          </h2>
           <p className="text-[16px] font-[200] leading-[1.8] text-[#b89a6a] mb-6">
-            Tank and Lou give their thoughts on everything from current events to the unwritten rules of dog life. Straight talk, unpretentious.
+            Tank and Lou give their thoughts on everything from current events to the unwritten rules of dog life.
           </p>
         </div>
       </section>

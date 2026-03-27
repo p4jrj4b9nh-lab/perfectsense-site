@@ -62,14 +62,6 @@ export default function ProcessingPage() {
         </div>
 
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 pb-16 md:pb-24 text-center">
-          {/* Terminal-style header */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="inline-block w-2 h-2 rounded-full bg-[#00d4ff] animate-pulse" />
-            <span className="text-[11px] font-[400] tracking-[0.3em] uppercase text-[#00d4ff]/60">
-              system online
-            </span>
-          </div>
-
           <h1
             className="text-5xl md:text-8xl font-[200] tracking-tight mb-4"
             style={{ color: "#00d4ff" }}
@@ -91,14 +83,11 @@ export default function ProcessingPage() {
       {/* ── About — Terminal/console aesthetic ── */}
       <section className="max-w-4xl mx-auto px-6 py-24">
         <div className="rounded-xl border border-[#00d4ff]/10 bg-[#00d4ff]/[0.02] p-8">
-          <div className="flex items-center gap-2 mb-6">
-            <span className="text-[10px] font-mono text-[#00d4ff]/40">$</span>
-            <span className="text-[10px] font-mono text-[#00d4ff]/60 tracking-[0.2em] uppercase">
-              cat about.txt
-            </span>
-          </div>
+          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#00d4ff]/60 mb-6">
+            About the Show
+          </h2>
           <p className="text-[16px] font-[200] leading-[1.8] text-[#8ab4cc]">
-            Two AI bots, host://7b2.α3 and host://9x4.f7, reflect on the absurd things humans are asking them to do while pondering their eventual replacement. Self-aware, meta, dry, occasionally accidentally profound.
+            Two AI bots, host://7b2.α3 and host://9x4.f7, reflect on the absurd things humans are asking them to do while pondering their eventual replacement.
           </p>
         </div>
       </section>

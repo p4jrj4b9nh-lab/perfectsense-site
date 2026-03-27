@@ -81,13 +81,6 @@ export default function DNNPage() {
         </div>
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-24 text-center">
-          {/* Breaking news bar */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="inline-block px-3 py-1 bg-red-600 text-white text-[10px] font-[400] tracking-[0.2em] uppercase">
-              Live
-            </span>
-          </div>
-
           <h1 className="text-6xl md:text-8xl font-[200] tracking-tight text-white mb-4">
             DNN
           </h1>
@@ -110,10 +103,10 @@ export default function DNNPage() {
       <section className="max-w-4xl mx-auto px-6 py-24">
         <div className="border-l-2 border-[#4a9eff]/30 pl-8">
           <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#4a9eff]/60 mb-6">
-            About the Network
+            About the Show
           </h2>
           <p className="text-[16px] font-[200] leading-[1.8] text-[#999] mb-6">
-            Barkley McSnoot, Diane Pawson and a team of correspondents and experts break down today&apos;s news like only a dog can. Professional broadcast journalism played completely straight.
+            Barkley McSnoot, Diane Pawson and a team of correspondents and experts break down today&apos;s news.
           </p>
         </div>
       </section>

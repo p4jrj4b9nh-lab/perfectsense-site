@@ -86,6 +86,9 @@ export default function SitStaySpillPage() {
 
       {/* ── About — Conversational, cozy ── */}
       <section className="max-w-3xl mx-auto px-6 py-24 text-center">
+        <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#ff6eb4]/60 mb-6">
+          About the Show
+        </h2>
         <p className="text-[16px] font-[200] leading-[1.8] text-[#cc8aa8] mb-6">
           Pepper and Sage dish on the latest dog park drama and all the unhinged things their human did this week.
         </p>
