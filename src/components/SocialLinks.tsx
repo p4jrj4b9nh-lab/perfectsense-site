@@ -17,7 +17,7 @@ export default function SocialLinks({ tiktok, instagram, youtube, color = "#999"
   ].filter((l) => l.url);
 
   return (
-    <div className={`flex items-center ${gap}`}>
+    <div className={`flex items-center justify-center ${gap}`}>
       {links.map((link) => (
         <a
           key={link.label}
