@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -22,16 +21,37 @@ export default function ContactPage() {
         </h1>
       </section>
 
-      {/* Form Section */}
-      <section className="px-6 sm:px-10 lg:px-20 py-16 md:py-24 max-w-xl mx-auto">
-        <p className="text-sm font-[200] text-[#666] tracking-[0.05em] mb-2">
-          For brand partnerships, licensing, and press inquiries.
-        </p>
-        <p className="text-sm font-[200] text-[#999] mb-12">
-          hello@perfectsenseproductions.com
-        </p>
+      {/* Email Section */}
+      <section className="px-6 sm:px-10 lg:px-20 py-16 md:py-24 max-w-xl mx-auto text-center">
+        <div className="mb-16">
+          <p className="text-[11px] font-[200] tracking-[0.2em] uppercase text-[#999] mb-4">
+            General Feedback
+          </p>
+          <a
+            href="mailto:hello@perfectsenseproductions.com"
+            className="text-lg sm:text-xl font-[200] tracking-[0.02em] text-[#0a0a0a] hover:opacity-60 transition-opacity"
+          >
+            hello@perfectsenseproductions.com
+          </a>
+          <p className="mt-3 text-sm font-[200] text-[#999]">
+            Fan mail, show ideas, or just to say hey.
+          </p>
+        </div>
 
-        <ContactForm />
+        <div className="pt-16 border-t border-black/10">
+          <p className="text-[11px] font-[200] tracking-[0.2em] uppercase text-[#999] mb-4">
+            Business Inquiries
+          </p>
+          <a
+            href="mailto:business@perfectsenseproductions.com"
+            className="text-lg sm:text-xl font-[200] tracking-[0.02em] text-[#0a0a0a] hover:opacity-60 transition-opacity"
+          >
+            business@perfectsenseproductions.com
+          </a>
+          <p className="mt-3 text-sm font-[200] text-[#999]">
+            Partnerships, sponsorships, licensing, and press.
+          </p>
+        </div>
       </section>
     </div>
   );
