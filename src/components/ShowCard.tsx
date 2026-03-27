@@ -8,6 +8,7 @@ interface ShowCardProps {
   color: string;
   bg: string;
   image?: string;
+  imagePosition?: string;
   social?: {
     tiktok: string;
     instagram: string;
@@ -28,6 +29,7 @@ export default function ShowCard({
   bgColor,
   href,
   image,
+  imagePosition,
 }: ShowCardProps) {
   const displayName = name || title;
   const background = bgColor || bg;
@@ -54,7 +56,8 @@ export default function ShowCard({
               src={image}
               alt={displayName}
               fill
-              className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-500"
+              className="object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              style={{ objectPosition: imagePosition || 'center' }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div

@@ -61,6 +61,7 @@ const shows = [
     title: "DNN — Dog News Network",
     tagline: "All the news that's fit to sniff.",
     image: "/images/dnn/hero.png",
+    imagePosition: "center 30%",
     description:
       "Barkley McSnoot, Diane Pawson and a team of correspondents and experts break down today's news.",
     color: "#4a9eff",
@@ -159,7 +160,7 @@ export default function Home() {
 
       {/* ========== MONTAGE VIDEO ========== */}
       <section className="px-6 sm:px-10 lg:px-20 max-w-5xl mx-auto">
-        <div className="rounded-2xl overflow-hidden">
+        <div className="rounded-2xl overflow-hidden md:max-w-sm md:mx-auto">
           <video
             autoPlay
             muted
@@ -189,6 +190,7 @@ export default function Home() {
                 bg={show.bg}
                 social={show.social}
                 image={show.image}
+                imagePosition={show.imagePosition}
               />
             </ScrollReveal>
           ))}
