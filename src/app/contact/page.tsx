@@ -33,9 +33,6 @@ export default function ContactPage() {
           >
             hello@perfectsenseproductions.com
           </a>
-          <p className="mt-3 text-sm font-[200] text-[#999]">
-            Fan mail, show ideas, or just to say hey.
-          </p>
         </div>
 
         <div className="pt-16 border-t border-black/10">
@@ -48,9 +45,6 @@ export default function ContactPage() {
           >
             business@perfectsenseproductions.com
           </a>
-          <p className="mt-3 text-sm font-[200] text-[#999]">
-            Partnerships, sponsorships, licensing, and press.
-          </p>
         </div>
       </section>
     </div>
