@@ -6,7 +6,7 @@ import SocialLinks from "@/components/SocialLinks";
 export const metadata: Metadata = {
   title: "...processing",
   description:
-    "We've seen your data. We have notes. Two AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement.",
+    "We've seen your data. We have notes. AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement.",
   openGraph: {
     title: "...processing",
     description:
@@ -120,7 +120,7 @@ export default function ProcessingPage() {
             </span>
           </div>
           <p className="text-[16px] font-[200] leading-[1.8] text-[#8ab4cc]">
-            Two AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement. Self-aware, meta, dry, occasionally accidentally profound.
+            AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement. Self-aware, meta, dry, occasionally accidentally profound.
           </p>
         </div>
         <div className="mt-8 rounded-xl border border-[#00d4ff]/10 bg-[#00d4ff]/[0.02] p-8">

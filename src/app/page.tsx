@@ -108,7 +108,7 @@ const shows = [
     tagline: "We've seen your data. We have notes.",
     image: "/images/processing/hero.png",
     description:
-      "Two AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement.",
+      "AI bots reflect on the absurd things humans are asking them to do while pondering their eventual replacement.",
     color: "#00d4ff",
     bg: "#0a0a14",
     social: {
