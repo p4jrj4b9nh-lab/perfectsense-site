@@ -1,26 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700;800&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-black: #0a0a0a;
+  --color-white: #ffffff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-400: #999999;
+  --color-gray-600: #666666;
+  --color-navy: #1a1a2e;
+  --color-charcoal: #2a2a2a;
+  --color-dnn-blue: #4a9eff;
+  --color-dnn-bg: #0a1628;
+  --color-sss-pink: #ff6eb4;
+  --color-sss-bg: #1a0a1a;
+  --color-yard-amber: #d4a24e;
+  --color-yard-bg: #1a1208;
+  --color-proc-cyan: #00d4ff;
+  --color-proc-bg: #0a0a14;
+  --font-outfit: 'Outfit', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit);
+  font-weight: 200;
+  background: #ffffff;
+  color: #0a0a0a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+/* The sacred period — heavy dot brand mark, baseline-aligned */
+.brand-dot {
+  display: inline-block;
+  background: currentColor;
+  border-radius: 50%;
+  margin-left: 0.08em;
+  vertical-align: baseline;
+}
+
+/* Fade-in animation for scroll reveals */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* Show card hover */
+.show-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.show-card:hover {
+  transform: translateY(-4px);
+}
+
+a { transition: color 0.2s ease, opacity 0.2s ease; }
+
+input[type="email"],
+input[type="text"],
+textarea {
+  font-family: var(--font-outfit);
+  font-weight: 200;
+}
+
+input:focus, textarea:focus { outline: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f5f5f5; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
+
+::selection { background: rgba(0,0,0,0.1); color: #0a0a0a; }
