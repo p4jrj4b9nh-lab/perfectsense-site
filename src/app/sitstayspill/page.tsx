@@ -89,17 +89,6 @@ export default function SitStaySpillPage() {
         <p className="text-[16px] font-[200] leading-[1.8] text-[#cc8aa8] mb-6">
           Pepper and Sage dish on the latest dog park drama and all the unhinged things their human did this week.
         </p>
-        <div className="mt-10 rounded-3xl border border-[#ff6eb4]/10 bg-[#ff6eb4]/[0.03] p-8">
-          <p className="text-[12px] font-[200] tracking-[0.15em] uppercase text-[#ff6eb4]/40 mb-4">
-            The Dynamic
-          </p>
-          <p className="text-[15px] font-[200] leading-[1.8] text-[#999]">
-            Pepper is the reactor&mdash;she feels everything at full volume.
-            Sage is the observer&mdash;she processes everything and delivers
-            one sentence that reframes it all. Pepper provides the chaos.
-            Sage provides the clarity.
-          </p>
-        </div>
       </section>
 
       {/* ── The Hosts ── */}

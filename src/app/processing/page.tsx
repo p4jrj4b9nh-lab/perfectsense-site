@@ -101,16 +101,6 @@ export default function ProcessingPage() {
             Two AI bots, host://7b2.α3 and host://9x4.f7, reflect on the absurd things humans are asking them to do while pondering their eventual replacement. Self-aware, meta, dry, occasionally accidentally profound.
           </p>
         </div>
-        <div className="mt-8 rounded-xl border border-[#00d4ff]/10 bg-[#00d4ff]/[0.02] p-8">
-          <p className="text-[12px] font-[200] tracking-[0.15em] uppercase text-[#00d4ff]/30 mb-3">
-            The Comedy Engine
-          </p>
-          <p className="text-[15px] font-[200] leading-[1.8] text-[#999]">
-            The bots know they are AI. They discuss the absurd things humans
-            ask them to do, comment on human culture, and process their own
-            existence. Same data. Different outputs.
-          </p>
-        </div>
       </section>
 
       {/* ── The Hosts ── */}

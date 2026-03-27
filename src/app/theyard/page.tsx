@@ -87,17 +87,6 @@ export default function TheYardPage() {
             Tank and Lou give their thoughts on everything from current events to the unwritten rules of dog life. Straight talk, unpretentious.
           </p>
         </div>
-        <div className="mt-10 rounded-2xl border border-[#d4a24e]/10 bg-[#d4a24e]/[0.03] p-8">
-          <p className="text-[12px] font-[200] tracking-[0.15em] uppercase text-[#d4a24e]/40 mb-3">
-            The Dynamic
-          </p>
-          <p className="text-[15px] font-[200] leading-[1.8] text-[#999]">
-            Tank brings the energy&mdash;he gets worked up, has takes,
-            commits fully. Lou is the gravity&mdash;speaks in truths and
-            wisdom that occasionally don&apos;t make sense but they do to
-            him.
-          </p>
-        </div>
       </section>
 
       {/* ── The Hosts ── */}
