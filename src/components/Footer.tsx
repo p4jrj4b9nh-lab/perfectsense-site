@@ -9,7 +9,7 @@ const showLinks = [
 
 const companyLinks = [
   { name: "Shop", href: "/shop" },
-  { name: "Custom Messages", href: "/custom" },
+  { name: "Custom Videos", href: "/custom" },
   { name: "Contact", href: "/contact" },
 ];
 
