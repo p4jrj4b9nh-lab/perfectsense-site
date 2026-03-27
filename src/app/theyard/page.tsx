@@ -30,20 +30,8 @@ export const metadata: Metadata = {
 };
 
 const characters = [
-  {
-    name: "Tank",
-    role: "Co-Host",
-    breed: "Pit Bull",
-    description:
-      "Brings the energy. Gets worked up. Has takes. Commits fully. Wears a red bandana that says \"Man's Best Friend. Man's Worst Critic.\" Gold chain energy.",
-  },
-  {
-    name: "Lou",
-    role: "Co-Host",
-    breed: "Basset Hound",
-    description:
-      "The gravity. Speaks in truths and wisdom that occasionally don't make sense but they do to him. Long ears. Longer pauses.",
-  },
+  { name: "Tank", role: "Co-Host", image: "/images/characters/theyard/tank.png" },
+  { name: "Lou", role: "Co-Host", image: "/images/characters/theyard/lou.png" },
 ];
 
 const SHOW_COLOR = "#d4a24e";
@@ -122,7 +110,7 @@ export default function TheYardPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {characters.map((c) => (
-            <CharacterProfile key={c.name} {...c} color={SHOW_COLOR} />
+            <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
           ))}
         </div>
       </section>

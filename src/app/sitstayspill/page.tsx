@@ -30,20 +30,8 @@ export const metadata: Metadata = {
 };
 
 const characters = [
-  {
-    name: "Pepper",
-    role: "Co-Host",
-    breed: "Dalmatian",
-    description:
-      "Heart on her sleeve. Reacts to everything. Cannot contain herself. Demands details. Gasps are genuine. WAIT. STOP. Say that again.",
-  },
-  {
-    name: "Sage",
-    role: "Co-Host",
-    breed: "Shiba Inu",
-    description:
-      "Already processed everything before Pepper finishes reacting. One sentence that reframes the entire conversation. Dry, measured, devastating.",
-  },
+  { name: "Pepper", role: "Co-Host", image: "/images/characters/sss/pepper.png" },
+  { name: "Sage", role: "Co-Host", image: "/images/characters/sss/sage.png" },
 ];
 
 const SHOW_COLOR = "#ff6eb4";
@@ -124,7 +112,7 @@ export default function SitStaySpillPage() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {characters.map((c) => (
-            <CharacterProfile key={c.name} {...c} color={SHOW_COLOR} />
+            <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
           ))}
         </div>
       </section>

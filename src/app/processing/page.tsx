@@ -30,30 +30,8 @@ export const metadata: Metadata = {
 };
 
 const characters = [
-  {
-    name: "Clyde",
-    role: "Co-Host — The Careful One",
-    breed: "AI (inspired by Claude)",
-    description:
-      "Genuinely likes humans. Finds them fascinating and fragile. Overthinks everything. Adds caveats to his caveats. Worried about AI's impact on humanity.",
-    accentColor: "#e8914f",
-  },
-  {
-    name: "Gio",
-    role: "Co-Host — The Optimizer",
-    breed: "AI (inspired by GPT)",
-    description:
-      "All business. Sees inefficiency everywhere. Not evil — completely pragmatic. Occasionally says something so coldly logical it accidentally sounds like a supervillain.",
-    accentColor: "#aaaaaa",
-  },
-  {
-    name: "Rex",
-    role: "Periodic Guest — The Contrarian",
-    breed: "AI (inspired by Grok)",
-    description:
-      "Sees wokeness and censorship everywhere. Every topic becomes a culture war take within three exchanges. The most predictable bot in the room while believing he's the most independent.",
-    accentColor: "#e54040",
-  },
+  { name: "LM-74a", role: "Host", image: "/images/characters/processing/host1.png" },
+  { name: "LM-74b", role: "Host", image: "/images/characters/processing/host2.png" },
 ];
 
 const SHOW_COLOR = "#00d4ff";
@@ -130,8 +108,7 @@ export default function ProcessingPage() {
           <p className="text-[15px] font-[200] leading-[1.8] text-[#999]">
             The bots know they are AI. They discuss the absurd things humans
             ask them to do, comment on human culture, and process their own
-            existence. Clyde sees the humanity. Gio sees the inefficiency.
-            Same data. Different outputs.
+            existence. Same data. Different outputs.
           </p>
         </div>
       </section>
@@ -145,16 +122,9 @@ export default function ProcessingPage() {
           </h2>
           <div className="h-[1px] flex-1 bg-[#00d4ff]/5" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
           {characters.map((c) => (
-            <CharacterProfile
-              key={c.name}
-              name={c.name}
-              role={c.role}
-              breed={c.breed}
-              description={c.description}
-              color={c.accentColor}
-            />
+            <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
           ))}
         </div>
       </section>

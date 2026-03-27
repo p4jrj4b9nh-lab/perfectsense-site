@@ -30,76 +30,26 @@ export const metadata: Metadata = {
 };
 
 const characters = [
-  {
-    name: "Barkley McSnoot",
-    role: "Lead Anchor",
-    breed: "Great Dane",
-    description:
-      "The most trusted name in dog news. Unshakeable on-camera presence with a voice that commands attention.",
-  },
-  {
-    name: "Diane Pawson",
-    role: "Lead Anchor",
-    breed: "Standard Poodle",
-    description:
-      "Sharp, precise, the kind of anchor who makes you feel like everything is under control even when it clearly isn't.",
-  },
-  {
-    name: "Scraps McGraw",
-    role: "Field Reporter",
-    breed: "Mutt",
-    description:
-      "Reports live from the scene. Things go wrong. He commits anyway.",
-  },
-  {
-    name: "Sir Nigel Barksworth",
-    role: "International Correspondent",
-    breed: "English Bulldog",
-    description:
-      "Reports from abroad with the gravitas of someone who has seen too much.",
-  },
-  {
-    name: "Milton Greyhound",
-    role: "Financial Analyst",
-    breed: "Greyhound",
-    description:
-      "Tracks the treat economy with the intensity of a Wall Street trader.",
-  },
-  {
-    name: "Vera Pawston",
-    role: "Legal Analyst",
-    breed: "German Shepherd",
-    description:
-      "Breaks down dog law with the precision of a Supreme Court clerk.",
-  },
-  {
-    name: "Dr. Reed",
-    role: "Health Correspondent",
-    breed: "Golden Retriever",
-    description:
-      "Covers veterinary science and wellness with genuine concern for public health.",
-  },
-  {
-    name: "Arlo",
-    role: "Political Commentator (Progressive)",
-    breed: "Border Collie",
-    description:
-      "Passionate, principled, absolutely certain he's right about everything.",
-  },
-  {
-    name: "Steele",
-    role: "Political Commentator (Conservative)",
-    breed: "Rottweiler",
-    description:
-      "Tradition, order, discipline. The yard has rules for a reason.",
-  },
-  {
-    name: "Duchess",
-    role: "Lifestyle & Culture",
-    breed: "Afghan Hound",
-    description:
-      "Covers culture and lifestyle from a position of effortless superiority.",
-  },
+  { name: "Barkley McSnoot", role: "Lead Anchor", image: "/images/characters/dnn/barkely.png" },
+  { name: "Diane Pawson", role: "Co-Anchor", image: "/images/characters/dnn/diane.png" },
+  { name: "Scraps", role: "Field Correspondent", image: "/images/characters/dnn/scraps.png" },
+  { name: "Rex Barkington", role: "Security Correspondent", image: "/images/characters/dnn/rex.png" },
+  { name: "Milton Wrinkles", role: "Senior Economic Analyst", image: "/images/characters/dnn/milton.png" },
+  { name: "Gus Sniffwell", role: "Investigative Reporter", image: "/images/characters/dnn/gus.png" },
+  { name: "Cheddar", role: "Lifestyle Correspondent", image: "/images/characters/dnn/chedder.png" },
+  { name: "Sunny", role: "Weatherman", image: "/images/characters/dnn/sunny.png" },
+  { name: "Blitz", role: "Sports Reporter", image: "/images/characters/dnn/blitz.png" },
+  { name: "Sloane", role: "Politics Reporter", image: "/images/characters/dnn/sloane.png" },
+  { name: "Duchess", role: "Luxury Lifestyle Reporter", image: "/images/characters/dnn/duchess.png" },
+  { name: "Coco", role: "Pop Culture Reporter", image: "/images/characters/dnn/coco.png" },
+  { name: "Winston", role: "Food Critic", image: "/images/characters/dnn/winston.png" },
+  { name: "Arlo Woofman", role: "Political Analyst", image: "/images/characters/dnn/arlo.png" },
+  { name: "Steele Barkwell", role: "Political Analyst", image: "/images/characters/dnn/steele.png" },
+  { name: "Chip", role: "Tech Correspondent", image: "/images/characters/dnn/chip.png" },
+  { name: "Vera", role: "Legal Analyst", image: "/images/characters/dnn/vera.png" },
+  { name: "Vita", role: "Health & Wellness Reporter", image: "/images/characters/dnn/vita_downdog.png" },
+  { name: "Nigel", role: "Foreign Correspondent", image: "/images/characters/dnn/nigel.png" },
+  { name: "Knox", role: "Business Analyst", image: "/images/characters/dnn/knox.png" },
 ];
 
 const SHOW_COLOR = "#4a9eff";
@@ -177,9 +127,9 @@ export default function DNNPage() {
           </h2>
           <div className="h-[1px] flex-1 bg-white/5" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
           {characters.map((c) => (
-            <CharacterProfile key={c.name} {...c} color={SHOW_COLOR} />
+            <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
           ))}
         </div>
       </section>
