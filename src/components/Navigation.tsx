@@ -28,11 +28,8 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-black/5">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-baseline gap-0 group">
-          <span className="text-lg font-[200] tracking-[0.15em] text-[#0a0a0a]">
-            Perfect Sense
-          </span>
-          <span className="inline-block w-[7px] h-[7px] bg-[#0a0a0a] rounded-full ml-[3px]" />
+        <Link href="/" className="group" aria-label="Home">
+          <span className="inline-block w-[14px] h-[14px] bg-[#0a0a0a] rounded-full" />
         </Link>
 
         {/* Desktop nav */}
