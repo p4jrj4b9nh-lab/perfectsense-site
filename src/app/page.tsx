@@ -154,9 +154,6 @@ export default function Home() {
           Productions
         </p>
 
-        <p className="mt-8 text-base sm:text-lg font-[200] text-[#999] animate-fade-in delay-300">
-          We make shows that make perfect sense.
-        </p>
 
       </section>
 
