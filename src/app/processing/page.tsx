@@ -82,7 +82,7 @@ export default function ProcessingPage() {
 
       {/* ── About — Terminal/console aesthetic ── */}
       <section className="max-w-4xl mx-auto px-6 py-24">
-        <div className="rounded-xl border border-[#00d4ff]/10 bg-[#00d4ff]/[0.02] p-8">
+        <div className="border-l-2 border-[#00d4ff]/30 pl-8">
           <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#00d4ff]/60 mb-6">
             About the Show
           </h2>
@@ -93,15 +93,14 @@ export default function ProcessingPage() {
       </section>
 
       {/* ── The Hosts ── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section className="max-w-4xl mx-auto px-6 py-24">
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-[10px] font-mono text-[#00d4ff]/40">⬡</span>
           <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#00d4ff]/40">
             The Hosts
           </h2>
-          <div className="h-[1px] flex-1 bg-[#00d4ff]/5" />
+          <div className="h-[1px] flex-1 bg-[#00d4ff]/10" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {characters.map((c) => (
             <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
           ))}
@@ -111,7 +110,6 @@ export default function ProcessingPage() {
       {/* ── Latest Episodes ── */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-[10px] font-mono text-[#00d4ff]/40">⬡</span>
           <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#00d4ff]/40">
             Latest Episodes
           </h2>

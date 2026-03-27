@@ -85,23 +85,25 @@ export default function SitStaySpillPage() {
       </section>
 
       {/* ── About — Conversational, cozy ── */}
-      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#ff6eb4]/60 mb-6">
-          About the Show
-        </h2>
-        <p className="text-[16px] font-[200] leading-[1.8] text-[#cc8aa8] mb-6">
-          Pepper and Sage dish on the latest dog park drama and all the unhinged things their human did this week.
-        </p>
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <div className="border-l-2 border-[#ff6eb4]/30 pl-8">
+          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#ff6eb4]/60 mb-6">
+            About the Show
+          </h2>
+          <p className="text-[16px] font-[200] leading-[1.8] text-[#cc8aa8] mb-6">
+            Pepper and Sage dish on the latest dog park drama and all the unhinged things their human did this week.
+          </p>
+        </div>
       </section>
 
       {/* ── The Hosts ── */}
-      <section className="max-w-3xl mx-auto px-6 py-24">
-        <h2
-          className="text-center text-[11px] font-[200] tracking-[0.3em] uppercase mb-12"
-          style={{ color: "#ff6eb4", opacity: 0.4 }}
-        >
-          The Hosts
-        </h2>
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#ff6eb4]/40">
+            The Hosts
+          </h2>
+          <div className="h-[1px] flex-1 bg-[#ff6eb4]/10" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {characters.map((c) => (
             <CharacterProfile key={c.name} name={c.name} role={c.role} image={c.image} color={SHOW_COLOR} />
