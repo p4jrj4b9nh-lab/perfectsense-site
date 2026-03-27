@@ -23,29 +23,15 @@ export default function ContactPage() {
 
       {/* Email Section */}
       <section className="px-6 sm:px-10 lg:px-20 py-16 md:py-24 max-w-xl mx-auto text-center">
-        <div className="mb-16">
-          <p className="text-[11px] font-[200] tracking-[0.2em] uppercase text-[#999] mb-4">
-            General Feedback
-          </p>
-          <a
-            href="mailto:hello@perfectsenseproductions.com"
-            className="text-lg sm:text-xl font-[200] tracking-[0.02em] text-[#0a0a0a] hover:opacity-60 transition-opacity"
-          >
-            hello@perfectsenseproductions.com
-          </a>
-        </div>
-
-        <div className="pt-16 border-t border-black/10">
-          <p className="text-[11px] font-[200] tracking-[0.2em] uppercase text-[#999] mb-4">
-            Business Inquiries
-          </p>
-          <a
-            href="mailto:business@perfectsenseproductions.com"
-            className="text-lg sm:text-xl font-[200] tracking-[0.02em] text-[#0a0a0a] hover:opacity-60 transition-opacity"
-          >
-            business@perfectsenseproductions.com
-          </a>
-        </div>
+        <p className="text-sm font-[200] text-[#999] mb-6">
+          For business, licensing or press inquiries or just to say hi.
+        </p>
+        <a
+          href="mailto:hello@perfectsenseproductions.com"
+          className="text-lg sm:text-xl font-[200] tracking-[0.02em] text-[#0a0a0a] hover:opacity-60 transition-opacity"
+        >
+          hello@perfectsenseproductions.com
+        </a>
       </section>
     </div>
   );
