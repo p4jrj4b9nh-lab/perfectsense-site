@@ -27,13 +27,13 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-black/5">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         <Link href="/" className="group" aria-label="Home">
           <span className="inline-block w-[14px] h-[14px] bg-[#0a0a0a] rounded-full" />
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {/* Shows dropdown */}
           <div ref={dropdownRef} className="relative">
             <button
