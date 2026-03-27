@@ -20,11 +20,11 @@ export default function CustomPage() {
             aria-hidden="true"
           />
         </h1>
-        <p className="text-xs font-[200] tracking-[6px] uppercase text-[#999] mb-10">
-          Coming Soon
-        </p>
-        <p className="text-base sm:text-lg font-[200] text-[#666] leading-[1.9]">
+        <p className="text-base sm:text-lg font-[200] text-[#666] leading-[1.9] mb-10">
           Personalized video messages from any character.
+        </p>
+        <p className="text-xs font-[200] tracking-[6px] uppercase text-[#999]">
+          Coming Soon
         </p>
       </section>
 

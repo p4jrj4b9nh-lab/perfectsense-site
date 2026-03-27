@@ -114,7 +114,7 @@ export default function DNNPage() {
             src="/images/dnn/hero.png"
             alt="DNN — Dog News Network"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[center_20%]"
             priority
             sizes="100vw"
           />
