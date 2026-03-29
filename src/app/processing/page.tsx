@@ -72,9 +72,10 @@ export default function ProcessingPage() {
             We&apos;ve seen your data. We have notes.
           </p>
           <SocialLinks
-            tiktok="https://tiktok.com/@processingpod"
-            instagram="https://instagram.com/processingpod"
-            youtube="https://youtube.com/@ProcessingPod"
+            tiktok="https://tiktok.com/@processing_show"
+            instagram="https://instagram.com/processing_show"
+            youtube="https://youtube.com/@processing_show"
+            x="https://x.com/processing_show"
             color={SHOW_COLOR}
           />
         </div>
@@ -142,9 +143,10 @@ export default function ProcessingPage() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {[
-            { label: "TikTok", url: "https://tiktok.com/@processingpod" },
-            { label: "Instagram", url: "https://instagram.com/processingpod" },
-            { label: "YouTube", url: "https://youtube.com/@ProcessingPod" },
+            { label: "TikTok", url: "https://tiktok.com/@processing_show" },
+            { label: "Instagram", url: "https://instagram.com/processing_show" },
+            { label: "YouTube", url: "https://youtube.com/@processing_show" },
+            { label: "X", url: "https://x.com/processing_show" },
           ].map((link) => (
             <a
               key={link.label}

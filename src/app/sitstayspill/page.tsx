@@ -76,9 +76,10 @@ export default function SitStaySpillPage() {
             The humans are not okay.
           </p>
           <SocialLinks
-            tiktok="https://tiktok.com/@sitstayspill"
-            instagram="https://instagram.com/sitstayspill"
-            youtube="https://youtube.com/@SitStaySpill"
+            tiktok="https://tiktok.com/@sitstayspill_show"
+            instagram="https://instagram.com/sitstayspill_show"
+            youtube="https://youtube.com/@sitstayspill_show"
+            x="https://x.com/sitstayspill_show"
             color={SHOW_COLOR}
           />
         </div>
@@ -150,9 +151,10 @@ export default function SitStaySpillPage() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {[
-            { label: "TikTok", url: "https://tiktok.com/@sitstayspill" },
-            { label: "Instagram", url: "https://instagram.com/sitstayspill" },
-            { label: "YouTube", url: "https://youtube.com/@SitStaySpill" },
+            { label: "TikTok", url: "https://tiktok.com/@sitstayspill_show" },
+            { label: "Instagram", url: "https://instagram.com/sitstayspill_show" },
+            { label: "YouTube", url: "https://youtube.com/@sitstayspill_show" },
+            { label: "X", url: "https://x.com/sitstayspill_show" },
           ].map((link) => (
             <a
               key={link.label}

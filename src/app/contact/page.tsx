@@ -10,33 +10,37 @@ export const metadata: Metadata = {
 const socials = [
   {
     label: "Perfect Sense Productions",
-    tiktok: "https://tiktok.com/@perfectsenseproductions",
     instagram: "https://instagram.com/perfectsenseproductions",
-    youtube: "https://youtube.com/@PerfectSenseProductions",
+    youtube: "https://youtube.com/@perfectsenseproductions",
+    x: "https://x.com/perfectsensepro",
   },
   {
     label: "DNN — Dog News Network",
-    tiktok: "https://tiktok.com/@dognewsnetwork",
-    instagram: "https://instagram.com/dognewsnetwork",
-    youtube: "https://youtube.com/@DogNewsNetwork",
+    tiktok: "https://tiktok.com/@dnn_show",
+    instagram: "https://instagram.com/dnn_show",
+    youtube: "https://youtube.com/@dnn_show",
+    x: "https://x.com/dnn_show",
   },
   {
     label: "Sit Stay Spill",
-    tiktok: "https://tiktok.com/@sitstayspill",
-    instagram: "https://instagram.com/sitstayspill",
-    youtube: "https://youtube.com/@SitStaySpill",
+    tiktok: "https://tiktok.com/@sitstayspill_show",
+    instagram: "https://instagram.com/sitstayspill_show",
+    youtube: "https://youtube.com/@sitstayspill_show",
+    x: "https://x.com/sitstayspill_show",
   },
   {
     label: "The Yard",
-    tiktok: "https://tiktok.com/@theyardshow",
-    instagram: "https://instagram.com/theyardshow",
-    youtube: "https://youtube.com/@TheYardShow",
+    tiktok: "https://tiktok.com/@theyard_show",
+    instagram: "https://instagram.com/theyard_show",
+    youtube: "https://youtube.com/@theyard_show",
+    x: "https://x.com/theyard_show",
   },
   {
     label: "...processing",
-    tiktok: "https://tiktok.com/@processingpod",
-    instagram: "https://instagram.com/processingpod",
-    youtube: "https://youtube.com/@ProcessingPod",
+    tiktok: "https://tiktok.com/@processing_show",
+    instagram: "https://instagram.com/processing_show",
+    youtube: "https://youtube.com/@processing_show",
+    x: "https://x.com/processing_show",
   },
 ];
 
@@ -62,6 +66,14 @@ function YouTubeIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
       <path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 00.5 6.19 31.64 31.64 0 000 12a31.64 31.64 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.64 31.64 0 0024 12a31.64 31.64 0 00-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+    </svg>
+  );
+}
+
+function XIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
     </svg>
   );
 }
@@ -106,32 +118,19 @@ export default function ContactPage() {
                 {account.label}
               </p>
               <div className="flex items-center justify-center gap-5">
-                <a
-                  href={account.tiktok}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#666] hover:text-[#0a0a0a] transition-colors"
-                  aria-label={`${account.label} on TikTok`}
-                >
-                  <TikTokIcon />
-                </a>
-                <a
-                  href={account.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#666] hover:text-[#0a0a0a] transition-colors"
-                  aria-label={`${account.label} on Instagram`}
-                >
+                {account.tiktok && (
+                  <a href={account.tiktok} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on TikTok`}>
+                    <TikTokIcon />
+                  </a>
+                )}
+                <a href={account.instagram} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on Instagram`}>
                   <InstagramIcon />
                 </a>
-                <a
-                  href={account.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#666] hover:text-[#0a0a0a] transition-colors"
-                  aria-label={`${account.label} on YouTube`}
-                >
+                <a href={account.youtube} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on YouTube`}>
                   <YouTubeIcon />
+                </a>
+                <a href={account.x} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on X`}>
+                  <XIcon />
                 </a>
               </div>
             </div>

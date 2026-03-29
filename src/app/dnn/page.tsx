@@ -91,9 +91,10 @@ export default function DNNPage() {
             All the news that&apos;s fit to sniff.
           </p>
           <SocialLinks
-            tiktok="https://tiktok.com/@dognewsnetwork"
-            instagram="https://instagram.com/dognewsnetwork"
-            youtube="https://youtube.com/@DogNewsNetwork"
+            tiktok="https://tiktok.com/@dnn_show"
+            instagram="https://instagram.com/dnn_show"
+            youtube="https://youtube.com/@dnn_show"
+            x="https://x.com/dnn_show"
             color={SHOW_COLOR}
           />
         </div>
@@ -158,9 +159,10 @@ export default function DNNPage() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {[
-            { label: "TikTok", url: "https://tiktok.com/@dognewsnetwork" },
-            { label: "Instagram", url: "https://instagram.com/dognewsnetwork" },
-            { label: "YouTube", url: "https://youtube.com/@DogNewsNetwork" },
+            { label: "TikTok", url: "https://tiktok.com/@dnn_show" },
+            { label: "Instagram", url: "https://instagram.com/dnn_show" },
+            { label: "YouTube", url: "https://youtube.com/@dnn_show" },
+            { label: "X", url: "https://x.com/dnn_show" },
           ].map((link) => (
             <a
               key={link.label}

@@ -67,9 +67,10 @@ const shows = [
     color: "#4a9eff",
     bg: "#0a1628",
     social: {
-      tiktok: "@dognewsnetwork",
-      instagram: "@dognewsnetwork",
-      youtube: "@DogNewsNetwork",
+      tiktok: "@dnn_show",
+      instagram: "@dnn_show",
+      youtube: "@dnn_show",
+      x: "@dnn_show",
     },
   },
   {
@@ -82,9 +83,10 @@ const shows = [
     color: "#ff6eb4",
     bg: "#1a0a1a",
     social: {
-      tiktok: "@sitstayspill",
-      instagram: "@sitstayspill",
-      youtube: "@SitStaySpill",
+      tiktok: "@sitstayspill_show",
+      instagram: "@sitstayspill_show",
+      youtube: "@sitstayspill_show",
+      x: "@sitstayspill_show",
     },
   },
   {
@@ -97,9 +99,10 @@ const shows = [
     color: "#d4a24e",
     bg: "#1a1208",
     social: {
-      tiktok: "@theyardshow",
-      instagram: "@theyardshow",
-      youtube: "@TheYardShow",
+      tiktok: "@theyard_show",
+      instagram: "@theyard_show",
+      youtube: "@theyard_show",
+      x: "@theyard_show",
     },
   },
   {
@@ -112,9 +115,10 @@ const shows = [
     color: "#00d4ff",
     bg: "#0a0a14",
     social: {
-      tiktok: "@processingpod",
-      instagram: "@processingpod",
-      youtube: "@ProcessingPod",
+      tiktok: "@processing_show",
+      instagram: "@processing_show",
+      youtube: "@processing_show",
+      x: "@processing_show",
     },
   },
 ];

@@ -64,9 +64,9 @@ export default function Footer() {
           <div>
             <p className="text-[10px] font-[200] tracking-[0.3em] uppercase text-[#999] mb-4">Follow</p>
             <div className="space-y-2">
-              <a href="https://tiktok.com/@dognewsnetwork" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">TikTok</a>
-              <a href="https://instagram.com/dognewsnetwork" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">Instagram</a>
-              <a href="https://youtube.com/@DogNewsNetwork" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">YouTube</a>
+              <a href="https://instagram.com/perfectsenseproductions" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">Instagram</a>
+              <a href="https://youtube.com/@perfectsenseproductions" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">YouTube</a>
+              <a href="https://x.com/perfectsensepro" target="_blank" rel="noopener noreferrer" className="block text-[14px] font-[200] text-[#666] hover:text-[#0a0a0a] transition-colors">X</a>
             </div>
           </div>
         </div>
