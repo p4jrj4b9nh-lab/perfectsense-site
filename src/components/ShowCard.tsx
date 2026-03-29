@@ -78,12 +78,6 @@ export default function ShowCard({
             >
               {displayName}
             </h3>
-            <p
-              className="text-[13px] font-[200] tracking-[0.1em] italic opacity-70"
-              style={{ color }}
-            >
-              {tagline}
-            </p>
           </div>
           <div className="mt-6 pt-4 border-t border-white/5">
             <span
