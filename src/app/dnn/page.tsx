@@ -93,8 +93,7 @@ export default function DNNPage() {
           <SocialLinks
             tiktok="https://tiktok.com/@dnn_show"
             instagram="https://instagram.com/dnn_show"
-            youtube="https://youtube.com/@dnn_show"
-            x="https://x.com/dnn_show"
+            youtube="https://youtube.com/@dnnshow"
             color={SHOW_COLOR}
           />
         </div>
@@ -161,8 +160,7 @@ export default function DNNPage() {
           {[
             { label: "TikTok", url: "https://tiktok.com/@dnn_show" },
             { label: "Instagram", url: "https://instagram.com/dnn_show" },
-            { label: "YouTube", url: "https://youtube.com/@dnn_show" },
-            { label: "X", url: "https://x.com/dnn_show" },
+            { label: "YouTube", url: "https://youtube.com/@dnnshow" },
           ].map((link) => (
             <a
               key={link.label}

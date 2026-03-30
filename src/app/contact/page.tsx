@@ -9,38 +9,28 @@ export const metadata: Metadata = {
 
 const socials = [
   {
-    label: "Perfect Sense Productions",
-    instagram: "https://instagram.com/perfectsenseproductions",
-    youtube: "https://youtube.com/@perfectsenseproductions",
-    x: "https://x.com/perfectsensepro",
-  },
-  {
     label: "DNN — Dog News Network",
     tiktok: "https://tiktok.com/@dnn_show",
     instagram: "https://instagram.com/dnn_show",
-    youtube: "https://youtube.com/@dnn_show",
-    x: "https://x.com/dnn_show",
+    youtube: "https://youtube.com/@dnnshow",
   },
   {
     label: "Sit Stay Spill",
     tiktok: "https://tiktok.com/@sitstayspill_show",
     instagram: "https://instagram.com/sitstayspill_show",
     youtube: "https://youtube.com/@sitstayspill_show",
-    x: "https://x.com/sitstayspill_show",
   },
   {
     label: "The Yard",
-    tiktok: "https://tiktok.com/@theyard_show",
+    tiktok: "https://tiktok.com/@the.yard12",
     instagram: "https://instagram.com/theyard_show",
     youtube: "https://youtube.com/@theyard_show",
-    x: "https://x.com/theyard_show",
   },
   {
     label: "...processing",
     tiktok: "https://tiktok.com/@processing_show",
-    instagram: "https://instagram.com/processing_show",
+    instagram: "https://instagram.com/processing.show",
     youtube: "https://youtube.com/@processing_show",
-    x: "https://x.com/processing_show",
   },
 ];
 
@@ -128,9 +118,6 @@ export default function ContactPage() {
                 </a>
                 <a href={account.youtube} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on YouTube`}>
                   <YouTubeIcon />
-                </a>
-                <a href={account.x} target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#0a0a0a] transition-colors" aria-label={`${account.label} on X`}>
-                  <XIcon />
                 </a>
               </div>
             </div>

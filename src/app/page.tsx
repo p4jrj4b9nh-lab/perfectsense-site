@@ -69,8 +69,7 @@ const shows = [
     social: {
       tiktok: "@dnn_show",
       instagram: "@dnn_show",
-      youtube: "@dnn_show",
-      x: "@dnn_show",
+      youtube: "@dnnshow",
     },
   },
   {
@@ -86,7 +85,6 @@ const shows = [
       tiktok: "@sitstayspill_show",
       instagram: "@sitstayspill_show",
       youtube: "@sitstayspill_show",
-      x: "@sitstayspill_show",
     },
   },
   {
@@ -99,10 +97,9 @@ const shows = [
     color: "#d4a24e",
     bg: "#1a1208",
     social: {
-      tiktok: "@theyard_show",
+      tiktok: "@the.yard12",
       instagram: "@theyard_show",
       youtube: "@theyard_show",
-      x: "@theyard_show",
     },
   },
   {
@@ -116,9 +113,8 @@ const shows = [
     bg: "#0a0a14",
     social: {
       tiktok: "@processing_show",
-      instagram: "@processing_show",
+      instagram: "@processing.show",
       youtube: "@processing_show",
-      x: "@processing_show",
     },
   },
 ];

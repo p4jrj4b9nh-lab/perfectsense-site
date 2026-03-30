@@ -79,7 +79,6 @@ export default function SitStaySpillPage() {
             tiktok="https://tiktok.com/@sitstayspill_show"
             instagram="https://instagram.com/sitstayspill_show"
             youtube="https://youtube.com/@sitstayspill_show"
-            x="https://x.com/sitstayspill_show"
             color={SHOW_COLOR}
           />
         </div>
@@ -154,7 +153,6 @@ export default function SitStaySpillPage() {
             { label: "TikTok", url: "https://tiktok.com/@sitstayspill_show" },
             { label: "Instagram", url: "https://instagram.com/sitstayspill_show" },
             { label: "YouTube", url: "https://youtube.com/@sitstayspill_show" },
-            { label: "X", url: "https://x.com/sitstayspill_show" },
           ].map((link) => (
             <a
               key={link.label}

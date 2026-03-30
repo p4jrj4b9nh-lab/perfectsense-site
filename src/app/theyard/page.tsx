@@ -72,10 +72,9 @@ export default function TheYardPage() {
             Man&apos;s best friend. Man&apos;s worst critic.
           </p>
           <SocialLinks
-            tiktok="https://tiktok.com/@theyard_show"
+            tiktok="https://tiktok.com/@the.yard12"
             instagram="https://instagram.com/theyard_show"
             youtube="https://youtube.com/@theyard_show"
-            x="https://x.com/theyard_show"
             color={SHOW_COLOR}
           />
         </div>
@@ -140,10 +139,9 @@ export default function TheYardPage() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {[
-            { label: "TikTok", url: "https://tiktok.com/@theyard_show" },
+            { label: "TikTok", url: "https://tiktok.com/@the.yard12" },
             { label: "Instagram", url: "https://instagram.com/theyard_show" },
             { label: "YouTube", url: "https://youtube.com/@theyard_show" },
-            { label: "X", url: "https://x.com/theyard_show" },
           ].map((link) => (
             <a
               key={link.label}
