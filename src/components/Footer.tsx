@@ -62,11 +62,19 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom bar — centered copyright only */}
-        <div className="border-t border-black/5 pt-8 text-center">
+        {/* Bottom bar */}
+        <div className="border-t border-black/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[12px] font-[200] text-[#999]">
             &copy; 2026 Perfect Sense Productions
           </p>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy" className="text-[12px] font-[200] text-[#999] hover:text-[#0a0a0a] transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-[12px] font-[200] text-[#999] hover:text-[#0a0a0a] transition-colors">
+              Terms of Use
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
