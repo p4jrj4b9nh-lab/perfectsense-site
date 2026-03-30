@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CharacterProfile from "@/components/CharacterProfile";
 import SocialLinks from "@/components/SocialLinks";
+import YouTubeEpisodes from "@/components/YouTubeEpisodes";
 
 export const metadata: Metadata = {
   title: "The Yard",
@@ -108,26 +109,10 @@ export default function TheYardPage() {
       </section>
 
       {/* ── Latest Episodes ── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#d4a24e]/40">
-            Latest Episodes
-          </h2>
-          <div className="h-[1px] flex-1 bg-[#d4a24e]/10" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div
-              key={i}
-              className="aspect-[9/16] rounded-2xl border border-[#d4a24e]/10 bg-[#d4a24e]/[0.02] flex items-center justify-center"
-            >
-              <span className="text-[13px] font-[200] text-[#444]">
-                Coming Soon
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <YouTubeEpisodes
+        handle="@theyard_show"
+        color={SHOW_COLOR}
+      />
 
       {/* ── Follow CTA ── */}
       <section className="py-32 text-center px-6">

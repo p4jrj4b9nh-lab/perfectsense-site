@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CharacterProfile from "@/components/CharacterProfile";
 import SocialLinks from "@/components/SocialLinks";
+import YouTubeEpisodes from "@/components/YouTubeEpisodes";
 
 export const metadata: Metadata = {
   title: "Sit Stay Spill",
@@ -112,26 +113,10 @@ export default function SitStaySpillPage() {
       </section>
 
       {/* ── Latest Episodes ── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <h2
-          className="text-center text-[11px] font-[200] tracking-[0.3em] uppercase mb-12"
-          style={{ color: "#ff6eb4", opacity: 0.4 }}
-        >
-          Latest Episodes
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div
-              key={i}
-              className="aspect-[9/16] rounded-3xl border border-[#ff6eb4]/10 bg-[#ff6eb4]/[0.02] flex items-center justify-center"
-            >
-              <span className="text-[13px] font-[200] text-[#444]">
-                Coming Soon
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <YouTubeEpisodes
+        handle="@sitstayspill_show"
+        color={SHOW_COLOR}
+      />
 
       {/* ── Follow CTA ── */}
       <section className="py-32 text-center px-6">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CharacterProfile from "@/components/CharacterProfile";
 import SocialLinks from "@/components/SocialLinks";
+import YouTubeEpisodes from "@/components/YouTubeEpisodes";
 
 export const metadata: Metadata = {
   title: "DNN — Dog News Network",
@@ -127,26 +128,11 @@ export default function DNNPage() {
       </section>
 
       {/* ── Latest Episodes ── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-[11px] font-[200] tracking-[0.3em] uppercase text-[#666]">
-            Latest Broadcasts
-          </h2>
-          <div className="h-[1px] flex-1 bg-white/5" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div
-              key={i}
-              className="aspect-[9/16] rounded-2xl border border-[#4a9eff]/10 bg-[#4a9eff]/[0.02] flex items-center justify-center"
-            >
-              <span className="text-[13px] font-[200] text-[#444]">
-                Coming Soon
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <YouTubeEpisodes
+        handle="@dnnshow"
+        color={SHOW_COLOR}
+        heading="Latest Broadcasts"
+      />
 
       {/* ── Follow CTA ── */}
       <section className="py-32 text-center px-6">
