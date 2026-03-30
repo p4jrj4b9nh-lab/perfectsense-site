@@ -19,18 +19,37 @@ export default function EmailSignup({
 }: EmailSignupProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder: wire to Formspree, Mailchimp, etc.
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div>
-      <p className={`text-[13px] font-[200] tracking-[0.15em] mb-6 ${dark ? "text-[#999]" : "text-[#666]"}`}>
-        {heading}
-      </p>
+      {heading && (
+        <p className={`text-[13px] font-[200] tracking-[0.15em] mb-6 ${dark ? "text-[#999]" : "text-[#666]"}`}>
+          {heading}
+        </p>
+      )}
       {submitted ? (
         <p className="text-[14px] font-[200]" style={{ color: accentColor }}>
           You&apos;re in. We&apos;ll be in touch.
@@ -49,12 +68,16 @@ export default function EmailSignup({
           />
           <button
             type="submit"
-            className="px-6 py-3 text-[12px] font-[400] tracking-[0.15em] uppercase transition-opacity hover:opacity-80"
+            disabled={loading}
+            className="px-6 py-3 text-[12px] font-[400] tracking-[0.15em] uppercase transition-opacity hover:opacity-80 disabled:opacity-50"
             style={{ background: accentColor, color: accentColor === "#ffffff" ? "#0a0a0a" : "#ffffff" }}
           >
-            {buttonText}
+            {loading ? "..." : buttonText}
           </button>
         </form>
+      )}
+      {error && (
+        <p className="mt-3 text-[13px] font-[200] text-red-500">{error}</p>
       )}
     </div>
   );
